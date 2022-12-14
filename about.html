@@ -9,7 +9,20 @@
 
 </head>
 <body>
- <a href="index.html">Home</a>
+ <div id="nav-container"></div>
+  <script>
+   // Select the element on the page where you want to insert the nav bar
+   const navContainer = document.querySelector('#nav-container');
+  
+   // Use the fetch function to load the contents of menu.html
+   fetch('menu.html')
+     .then(response => response.text())
+     .then(html => {
+       // Once the contents of menu.html have been loaded,
+       // insert them into the page using the innerHTML property
+       navContainer.innerHTML = html;
+     });
+  </script>
  <h1>About Cameron Argon:</h1>
  <h2>Cameron</h2>
 

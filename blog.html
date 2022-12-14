@@ -8,7 +8,20 @@
  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
- <a href="index.html">Home</a>
+ <div id="nav-container"></div>
+  <script>
+   // Select the element on the page where you want to insert the nav bar
+   const navContainer = document.querySelector('#nav-container');
+  
+   // Use the fetch function to load the contents of menu.html
+   fetch('menu.html')
+     .then(response => response.text())
+     .then(html => {
+       // Once the contents of menu.html have been loaded,
+       // insert them into the page using the innerHTML property
+       navContainer.innerHTML = html;
+     });
+  </script>
  <h2>Blog</h2>
  <ul>
  <li><a href="Blog001.html">The Two Sides of Making Music on a Computer December 12, 2022</a></li></ul>

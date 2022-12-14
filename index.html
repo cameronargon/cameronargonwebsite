@@ -7,25 +7,35 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Cameron Argon's Website Homepage</title>
- 
+
 </head>
+
 <body>
+ <div id="nav-container"></div>
 
-<h1 id="#top">Welcome To My Website</h1>
+ <script>
+  // Select the element on the page where you want to insert the nav bar
+  const navContainer = document.querySelector('#nav-container');
+ 
+  // Use the fetch function to load the contents of menu.html
+  fetch('menu.html')
+    .then(response => response.text())
+    .then(html => {
+      // Once the contents of menu.html have been loaded,
+      // insert them into the page using the innerHTML property
+      navContainer.innerHTML = html;
+    });
+ </script>
+ 
+ <h1 id="#top">Welcome To My Website</h1>
 
-<div>
-<p>Table Of Contents</p>
-<ul>
- <li><a href="about.html">About</a></li>
- <li><a href="disfiguringthegoddess.html">Disfiguring The Goddess</a></li>
- <li><a href="bigchocolate.html">Big Chocolate</a></li>
- <li><a href="books.html">Books</a></li>
- <li><a href="blog.html">Blog</a></li>
- <li><a href="links.html">Links</a></li>
 
-</ul>
 
-</div>
+
+
+
+
+
 
 
 <!-- <a href="#top">Back to the top of page</a> -->

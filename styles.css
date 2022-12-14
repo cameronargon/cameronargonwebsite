@@ -38,3 +38,19 @@ p {
  margin: 8px 0;
  color: #333;
 }
+
+nav ul {
+ text-align: center;
+}
+
+nav ul li {
+ display: inline-block;
+}
+
+nav ul li a {
+ font-size: 18px;
+ padding: 20px;
+ color: #333;
+}
+
+
