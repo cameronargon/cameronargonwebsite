@@ -28,15 +28,14 @@
  <p>Here are some books I would recommend</p>
 
  <h2>Non Fiction</h2>
- <ul>
+ <ul id="nonFiction">
    <li>Think and Grow Rich
       By: Napoleon Hill</li>
    <li>The Power of One More: The Ultimate Guide to Happiness and Success
       By: Ed Mylett</li>
    <li>Failing Forward: Turning Mistakes into Stepping Stones for Success
       By: John C. Maxwell</li>
-      <li>
-         The Greatest Salesman in the World
+      <li>The Greatest Salesman in the World
          By: Og Mandino</li>
    <li>Pick Up the Phone and Sell: How Proactive Calls to Customers and Prospects Can Double Your Sales
       By: Alex Goldfayn</li>
@@ -132,12 +131,23 @@
             By: Ron Chernow</li>
 
 
-
+            <script>
+               var list = document.getElementById("nonFiction");
+               var items = list.getElementsByTagName("li");
+               var array = [];
+               for (var i = 0; i < items.length; i++) {
+                 array.push(items[i].innerHTML);
+               }
+               array.sort();
+               for (var i = 0; i < items.length; i++) {
+                 items[i].innerHTML = array[i];
+               }
+             </script>
  
   </ul>
 
   <h2>Fiction</h2>
-  <ul>
+  <ul id="Fiction">
    <li>1984: New Classic Edition
     By: George Orwell</li>
    <li>The Exorcist: A Novel
@@ -156,6 +166,20 @@
        <li>Watchers
         By: Dean Koontz</li>
    </ul>
+
+   <script>
+      var list = document.getElementById("Fiction");
+      var items = list.getElementsByTagName("li");
+      var array = [];
+      for (var i = 0; i < items.length; i++) {
+        array.push(items[i].innerHTML);
+      }
+      array.sort();
+      for (var i = 0; i < items.length; i++) {
+        items[i].innerHTML = array[i];
+      }
+    </script>
+
 
 </body>
 </html>
