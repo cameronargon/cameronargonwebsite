@@ -1,102 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Chocolate</title>
 
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Big Chocolate</title>
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
-  <div id="nav-container"></div>
-  <script>
-   // Select the element on the page where you want to insert the nav bar
-   const navContainer = document.querySelector('#nav-container');
-  
-   // Use the fetch function to load the contents of menu.html
-   fetch('menu.html')
-     .then(response => response.text())
-     .then(html => {
-       // Once the contents of menu.html have been loaded,
-       // insert them into the page using the innerHTML property
-       navContainer.innerHTML = html;
-     });
-  </script>
- <h1>Big Chocolate</h1>
- <h2>A Renowned Producer and Artist</h2>
- <p>Big Chocolate is a renowned producer and artist known for his official remixes of notable bands such as Asking Alexandira, Suicide Silence, Whitechapel, Architects, Bless The Fall, and As I Lay Dying. He has over 20 solo releases and notable placements such as a GoPro commercial with national airing in 2013, the films 'Jobs' starring Ashton Kutcher and 'Parker' starring Jennifer Lopez, and the mobile game 'Gangster Vegas'. He is also the mastermind behind the legendary deathcore/industrial project Disfiguring The Goddess.</p>
- <p>Big Chocolate has performed at various notable festivals such as SXSW, Vans Warped Tour, Ultra Music Festival, Movement Electronic Music Festival, SnowGlobe, Bamboozle, Freaknight, Euphoria Festival, Wakaan, Emissions, The Untz, Toxic Summer, and Freaky Deaky.</p>
+    
+    <header class="header">
 
-<h2>Dubstep for Moms</h2>
-<p>Are you tired of the same old, over-the-top dubstep that's too loud, too aggressive, and too random? Introducing Dubstep for Moms! Our music is easy to listen to, accessible, and repetitive, so you can enjoy it without feeling overwhelmed. Plus, it's sexy and easy to move to, making it perfect for moms who want to let loose and have some fun. So why not give Dubstep for Moms a try today? You won't be disappointed.</p>
+        <div class="wrapper">
+            <div class="header-box">
+                <div class="header-btn">
+                    <span></span>
+                </div>
 
- <h2>Discography</h2>
- <ul>
-   <li>Axiom Of A (2006)</li>
-   <li>Virulence (2007)</li>
-   <li>CMA (2008)</li>
-   <li>Shacka Brah (2009)</li>
-   <li>I'm Shot (2010)</li>
-   <li>HiLion (2011)</li>
-   <li>What is? by Commissioner (With Mitch Lucker) (2011)</li>
-   <li>Red Headed Locc (2012)</li>
-   <li>The Red EP (2013)</li>
-   <li>Clean EP (2013)</li>
-   <li>Couples EP (2014)</li>
-   <li>The WDF EP (2014)</li>
-   <li>RIP Small Face w/ Dj Two Stacks (2015)</li>
-   <li>Midways (2016)</li>
-   <li>Beauty Of The Bird (2016)</li>
-   <li>Death Before Dubstep (2018)</li>
-   <li>Bicycle Sidewalk EP (2019)</li>
-   <li>Motorcycle Sidewalk (2019)</li>
-   <li><a href="choccd.html">Chocc'd & Screwed Vol 1 (2020)</a></li>
-   <li>Driving EP (2021)</li>
-   <li>Pond Scum EP (2021; Sleeveless Records)</li>
-   <li>Dubstep For Moms (2022)</li>
-   <li>Give The People Big Chocolate EP X The Weight Of Silence (2023)</li>
-   <li>Poppin' Sh*t Crizzly X Big Chocolate (2023; Circus Records)</li>
-   <li>Dubstep Is Not A Phase, Mom (2023)</li>
-   <li>Dubstep For Moms 1.5(2023)</li>
-   <li>Big C Saves The Underground Vol 1(2023)</li>
-   <li>Big C Saves The Underground Vol 2(2023)</li>
-   <li>Big C Saves The Underground Vol 3(2023)</li>
+                <div class="header-menu">
+                    <nav class="header-menu-inner">
+                        <ul class="menu"> 
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="index.html">Home</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="about.html">About</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="disfiguringthegoddess.html">Disfiguring The Goddess</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="bigchocolate.html">Big Chocolate</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="books.html">Books</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="links.html">Links</a>
+                            </li>
+                        </ul>
+                   </nav>
+                </div>
 
- 
-  </ul>
- 
-  <h2>Notibale Festival Preformances</h2>
-  <ul>
-   <li>SXSW: 2010-2015; Austin, TX</li>
-   <li>Vans Warped Tour: 2011, 2013; 40 City US Tour</li>
-   <li>Ultra Music Festival: 2012; Miami, FL</li>
-   <li>Movement Electronic Music Festival: 2013; Detroit, MI</li>
-   <li>SnowGlobe: 2012; Lake Tahoe, CA</li>
-   <li>Bamboozle: 2012; Asbury Park, NJ</li>
-   <li>Freaknight: 2012; Seattle, WA</li>
-   <li>Euphoria Festival: 2012; Kyle, TX</li>
-   <li>Wakaan: 2019; Ozark, AR</li>
-   <li>Emissions: 2016, 2018; Beldentown, CA</li>
-   <li>The Untz: 2019; Browns Valley, CA</li>
-   <li>Toxic Summer: 2019; San Francisco, CA</li>
-   <li>Freaky Deaky: 2021; Houston, TX</li>
-  </ul>
-  <h2>Notable Placements</h2>
-  <ul>
-<li>GoPro Commercial: National Airing (2013)</li>
-<li>Jobs (Film): Starring Ashton Kutcher (2013)</li>
-<li>Parker (Film): Starring Jennifer Lopez (2013)</li>
-<li>Gangster Vegas: Android and iOS Game (2013)</li>
-<li>Royal Teeth: We Can Glow (2013)</li>
-<li>Chase Jarvis: Youtube Channel (2013)</li>
-<li>Prof: Ape Sh*t featuring Waka Flacka Flame (2015)</li>
-</ul>
-<h2>Reviews</h2>
-<p>Big Chocolate's 2022 release Dubstep for Moms combines the elements of dubstep and downtempo electronica to create a mellow and sophisticated listening experience. The album starts off with the vocal infused deep dubstep that Big Chocolate has teased at recently and quickly transitions into a more ambient downtempo listening experience, drawing influence from classic dubstep, minimal trip-hop, and other downtempo genres. Synths and melodic bass lines mix with modern production techniques to create a unique listening experience each time. Most especially noteworthy is how Big Chocolate incorporates repetitive vocal samples from various different hypnotic techniques in his soundscapes.</p>
-<p>The production value of this album is on par with some of the best in deep dubstep, showcasing Big Chocolate's talent for making an electronic production that moves your feet, yet keeps your head nodding. The diversity of the tracks is sparse; staying strictly on topic to demonstrate the craftsman at work.</p>
-<p>Thanks to his unique blend of diverse electronica styles - Big Chocolate's Dubstep for Moms has established itself as an essential listening experience. This album proves Big Chocolate is one of the most forward thinking producers in the genre and brings something different to the table.</p>
-<p>8.0/10</p>
+                <div class="header-socials">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/disfiguringthegoddess" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/dtgdtgdtg/" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="https://open.spotify.com/artist/4KNivmUcgaar8yZvjYRoqv?si=-iJmFtguQoeHpCc3jJlQDg" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#fff"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                        </a>                
+                    </div>
+                </div>
+            </div>
+
+        </div>        
+
+    </header>
+
+    <main class="main">
+        <div class="heading heading-bigc">
+            <div class="wrapper">
+                <h1 class="page-title">Big Chocolate</h1>
+            </div>
+        </div>
+
+        <section class="section section-content">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="content-logo">
+                        <img class="content-logo-img" src="./img/big-c-logo.jpg" alt="Big Chocolate logo">
+                    </div>  
+                    <h2 class="section-title"><span>A Renowned Producer and Artist</span></h2>
+                    <p>Big Chocolate is a renowned producer and artist known for his official remixes of notable bands such as Asking Alexandira, Suicide Silence, Whitechapel, Architects, Bless The Fall, and As I Lay Dying. He has over 20 solo releases and notable placements such as a GoPro commercial with national airing in 2013, the films 'Jobs' starring Ashton Kutcher and 'Parker' starring Jennifer Lopez, and the mobile game 'Gangster Vegas'. He is also the mastermind behind the legendary deathcore/industrial project Disfiguring The Goddess.</p>
+                    <p>Big Chocolate has performed at various notable festivals such as SXSW, Vans Warped Tour, Ultra Music Festival, Movement Electronic Music Festival, SnowGlobe, Bamboozle, Freaknight, Euphoria Festival, Wakaan, Emissions, The Untz, Toxic Summer, and Freaky Deaky.</p>
+                    <h3>Dubstep for Moms</h3>
+                    <p>Are you tired of the same old, over-the-top dubstep that's too loud, too aggressive, and too random? Introducing Dubstep for Moms! Our music is easy to listen to, accessible, and repetitive, so you can enjoy it without feeling overwhelmed. Plus, it's sexy and easy to move to, making it perfect for moms who want to let loose and have some fun. So why not give Dubstep for Moms a try today? You won't be disappointed.</p>
+                 </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-albums section-albums-bigc">
+            <div class="wrapper">
+                <h2 class="section-title section-title-white"><span>Discography</span></h2>
+                <div class="albums">
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Big C Saves The Underground Vol 3.jpg" alt="Big C Saves The Underground Vol 3" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Big C Saves The Underground Vol 3</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Big C Saves The Underground Vol 2.jpg" alt="Big C Saves The Underground Vol 2" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Big C Saves The Underground Vol 2</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Big C Saves The Underground Vol 1.jpg" alt="Big C Saves The Underground Vol 1" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Big C Saves The Underground Vol 1</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Dubstep For Moms 1.5.jpg" alt="Dubstep For Moms 1.5" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Dubstep For Moms 1.5</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Dubstep Is Not A Phase, Mom.jpg" alt="Dubstep Is Not A Phase, Mom" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Dubstep Is Not A Phase, Mom</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/album-placeholder.jpg" alt="Poppin' Sh*t Crizzly X Big Chocolate" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Poppin' Sh*t Crizzly X Big Chocolate</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/album-placeholder.jpg" alt="Give The People Big Chocolate EP X The Weight Of Silence" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Give The People Big Chocolate EP X The Weight Of Silence</div>
+                        </div>
+                        <div class="albums-elem-year">2023</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Dubstep For Moms.jpg" alt="Dubstep For Moms" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Dubstep For Moms</div>
+                        </div>
+                        <div class="albums-elem-year">2022</div>
+                    </div>   
+                    
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Pond Scum EP.jpg" alt="Pond Scum EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Pond Scum EP</div>
+                        </div>
+                        <div class="albums-elem-year">2021</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Driving EP.jpg" alt="Driving EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Driving EP</div>
+                        </div>
+                        <div class="albums-elem-year">2021</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <a href="choccd.html">
+                                    <img src="./img/albums/big-c/thumbs/Choccd & Screwed Vol 1.jpg" alt="Chocc'd & Screwed Vol 1" class="albums-elem-img">
+                                </a>
+                            </div>
+                            <div class="albums-elem-title">
+                                <a href="choccd.html">Chocc'd & Screwed Vol 1</a>
+                            </div>
+                        </div>
+                        <div class="albums-elem-year">2020</div>
+                    </div>                    
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Motorcycle Sidewalk.jpg" alt="Motorcycle Sidewalk" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Motorcycle Sidewalk</div>
+                        </div>
+                        <div class="albums-elem-year">2019</div>
+                    </div>                       
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Bicycle Sidewalk EP.jpg" alt="Bicycle Sidewalk EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Bicycle Sidewalk EP</div>
+                        </div>
+                        <div class="albums-elem-year">2019</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Death Before Dubstep.jpg" alt="Death Before Dubstep" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Death Before Dubstep</div>
+                        </div>
+                        <div class="albums-elem-year">2018</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Beauty Of The Bird.jpg" alt="Beauty Of The Bird " class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Beauty Of The Bird</div>
+                        </div>
+                        <div class="albums-elem-year">2016</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Midways.jpg" alt="Midways" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Midways</div>
+                        </div>
+                        <div class="albums-elem-year">2016</div>
+                    </div>  
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/RIP Small Face w Dj Two Stacks.jpg" alt="RIP Small Face w/ Dj Two Stacks" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">RIP Small Face w/ Dj Two Stacks</div>
+                        </div>
+                        <div class="albums-elem-year">2015</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/The WDF EP.jpg" alt="The WDF EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">The WDF EP</div>
+                        </div>
+                        <div class="albums-elem-year">2014</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Couples EP.jpg" alt="Couples EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Couples EP</div>
+                        </div>
+                        <div class="albums-elem-year">2014</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Clean EP.jpg" alt="Clean EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Clean EP</div>
+                        </div>
+                        <div class="albums-elem-year">2013</div>
+                    </div> 
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/The Red EP.jpg" alt="The Red EP" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">The Red EP</div>
+                        </div>
+                        <div class="albums-elem-year">2013</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Red Headed Locc.jpg" alt="Red Headed Locc" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Red Headed Locc</div>
+                        </div>
+                        <div class="albums-elem-year">2012</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/album-placeholder.jpg" alt="What is? by Commissioner (With Mitch Lucker)" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">What is? by Commissioner (With Mitch Lucker)</div>
+                        </div>
+                        <div class="albums-elem-year">2011</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/HiLion.jpg" alt="HiLion" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">HiLion</div>
+                        </div>
+                        <div class="albums-elem-year">2011</div>
+                    </div> 
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/I'm Shot.jpg" alt="I'm Shot" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">I'm Shot</div>
+                        </div>
+                        <div class="albums-elem-year">2010</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Shacka Brah.jpg" alt="Shacka Brah" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Shacka Brah</div>
+                        </div>
+                        <div class="albums-elem-year">2009</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/CMA.jpg" alt="CMA" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">CMA</div>
+                        </div>
+                        <div class="albums-elem-year">2008</div>
+                    </div>
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Virulence.jpg" alt="Virulence" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Virulence</div>
+                        </div>
+                        <div class="albums-elem-year">2007</div>
+                    </div> 
+
+                    <div class="albums-elem">
+                        <div class="albums-elem-inner">
+                            <div class="albums-elem-pic">
+                                <img src="./img/albums/big-c/thumbs/Axiom Of A.jpg" alt="Axiom Of A" class="albums-elem-img">
+                            </div>
+                            <div class="albums-elem-title">Axiom Of A</div>
+                        </div>
+                        <div class="albums-elem-year">2006</div>
+                    </div> 
+
+                </div>
+
+                <div class="section-footer">
+                    <a href="https://bigchocolate.bandcamp.com/" class="btn btn-section btn-section-border" target="_blank">Bandcamp</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-performances">
+            <div class="wrapper">
+                <h2 class="section-title"><span>Notibale Festival Preformances</span></h2>
+
+                <div class="performances">
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2010-2015</div>
+                        <div class="performances-elem-name">SXSW</div>
+                        <div class="performances-elem-location">Austin, TX</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2011, 2013</div>
+                        <div class="performances-elem-name">Vans Warped Tour</div>
+                        <div class="performances-elem-location">40 City US Tour</div>
+                    </div>    
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2012</div>
+                        <div class="performances-elem-name">Ultra Music Festival</div>
+                        <div class="performances-elem-location">Miami, FL</div>
+                    </div>  
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Movement Electronic Music Festival</div>
+                        <div class="performances-elem-location">Detroit, MI</div>
+                    </div>                      
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2012</div>
+                        <div class="performances-elem-name">SnowGlobe</div>
+                        <div class="performances-elem-location">Lake Tahoe, CA</div>
+                    </div>   
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2012</div>
+                        <div class="performances-elem-name">Bamboozle</div>
+                        <div class="performances-elem-location">Asbury Park, NJ</div>
+                    </div>  
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2012</div>
+                        <div class="performances-elem-name">Freaknight</div>
+                        <div class="performances-elem-location">Seattle, WA</div>
+                    </div> 
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2012</div>
+                        <div class="performances-elem-name">Euphoria Festival</div>
+                        <div class="performances-elem-location">Kyle, TX</div>
+                    </div> 
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2019</div>
+                        <div class="performances-elem-name">Wakaan</div>
+                        <div class="performances-elem-location">Ozark, AR</div>
+                    </div> 
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2016, 2018</div>
+                        <div class="performances-elem-name">Emissions</div>
+                        <div class="performances-elem-location">Beldentown, CA</div>
+                    </div> 
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2019</div>
+                        <div class="performances-elem-name">The Untz</div>
+                        <div class="performances-elem-location">Browns Valley, CA</div>
+                    </div>                    
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2019</div>
+                        <div class="performances-elem-name">Toxic Summer</div>
+                        <div class="performances-elem-location">San Francisco, CA</div>
+                    </div>                         
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2021</div>
+                        <div class="performances-elem-name">Freaky Deaky</div>
+                        <div class="performances-elem-location">Houston, TX</div>
+                    </div>                           
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-placements">
+            <div class="wrapper">
+                <h2 class="section-title"><span>Notable Placements</span></h2>
+
+                <div class="placements">
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">GoPro Commercial</div>
+                        <div class="performances-elem-location">National Airing</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Jobs (Film)</div>
+                        <div class="performances-elem-location">Starring Ashton Kutcher</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Parker (Film)</div>
+                        <div class="performances-elem-location">Starring Jennifer Lopez</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Gangster Vegas</div>
+                        <div class="performances-elem-location">Android and iOS Game</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Royal Teeth</div>
+                        <div class="performances-elem-location">We Can Glow</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2013</div>
+                        <div class="performances-elem-name">Chase Jarvis</div>
+                        <div class="performances-elem-location">Youtube Channel</div>
+                    </div>
+                    <div class="performances-elem">
+                        <div class="performances-elem-date">2015</div>
+                        <div class="performances-elem-name">Prof</div>
+                        <div class="performances-elem-location">Ape Sh*t featuring Waka Flacka Flame</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-reviews">
+            <div class="wrapper">
+                <h2 class="section-title"><span>Reviews</span></h2>
+                <div class="reviews">
+                    <div class="reviews-elem">
+                        <div class="reviews-elem-body">
+                            <p>Big Chocolate's 2022 release Dubstep for Moms combines the elements of dubstep and downtempo electronica to create a mellow and sophisticated listening experience. The album starts off with the vocal infused deep dubstep that Big Chocolate has teased at recently and quickly transitions into a more ambient downtempo listening experience, drawing influence from classic dubstep, minimal trip-hop, and other downtempo genres. Synths and melodic bass lines mix with modern production techniques to create a unique listening experience each time. Most especially noteworthy is how Big Chocolate incorporates repetitive vocal samples from various different hypnotic techniques in his soundscapes.</p>
+                            <p>The production value of this album is on par with some of the best in deep dubstep, showcasing Big Chocolate's talent for making an electronic production that moves your feet, yet keeps your head nodding. The diversity of the tracks is sparse; staying strictly on topic to demonstrate the craftsman at work.</p>
+                            <p>Thanks to his unique blend of diverse electronica styles - Big Chocolate's Dubstep for Moms has established itself as an essential listening experience. This album proves Big Chocolate is one of the most forward thinking producers in the genre and brings something different to the table.</p>                            
+                        </div>
+                        <div class="reviews-elem-rating">8.0</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-videos">
+            <div class="wrapper">
+                <h2 class="section-title"><span>Videos</span></h2>
+                <div class="videos">
+                    <div class="videos-elem">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/kiSxGkH9RXM?si=hhYsotIyzTVjUjZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="videos-elem">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/3eBT6y2wBs8?si=NZNNF3KVqwBK9Sjd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="https://www.youtube.com/@argon" class="btn btn-section" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="socials">
+                <a href="https://www.facebook.com/disfiguringthegoddess" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/dtgdtgdtg/" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a href="https://open.spotify.com/artist/4KNivmUcgaar8yZvjYRoqv?si=-iJmFtguQoeHpCc3jJlQDg" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#fff"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                </a>                
+            </div>
+            <div class="copyright">© 2023</div>
+        </div>
+    </footer>
+
+    <a class="go-top"></a>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

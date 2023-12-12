@@ -1,189 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
 
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Books</title>
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
-   <div id="nav-container"></div>
-   <script>
-    // Select the element on the page where you want to insert the nav bar
-    const navContainer = document.querySelector('#nav-container');
-   
-    // Use the fetch function to load the contents of menu.html
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(html => {
-        // Once the contents of menu.html have been loaded,
-        // insert them into the page using the innerHTML property
-        navContainer.innerHTML = html;
-      });
-   </script>
- <h1>Books</h1>
- <p>Here are some books I would recommend</p>
+    
+    <header class="header">
 
- <h2>Non Fiction</h2>
- <ul id="nonFiction">
-   <li>Birth School Metallica Death, Volume 1
-      By: Paul Brannigan , Ian Winwood</li>
-   <li>Never Finished: Unshackle Your Mind and Win the War Within
-      By: David Goggins</li>
-   <li>Think and Grow Rich
-      By: Napoleon Hill</li>
-   <li>The Power of One More: The Ultimate Guide to Happiness and Success
-      By: Ed Mylett</li>
-   <li>The Greatest Salesman in the World
-      By: Og Mandino</li>
-   <li>Failing Forward: Turning Mistakes into Stepping Stones for Success
-      By: John C. Maxwell</li>
-   <li>Pick Up the Phone and Sell: How Proactive Calls to Customers and Prospects Can Double Your Sales
-      By: Alex Goldfayn</li>
-   <li>Petty: The Biography
-      By: Warren Zanes</li>
-   <li>Sapiens: A Brief History of Humankind
-      By: Yuval Noah Harari</li>
-   <li>The Hypomanic Edge: The Link Between (A Little) Craziness and (A Lot of) Success in America
-      By: John D. Gartner</li>
-   <li>Pre-Suasion: Channeling Attention for Change
-      By: Robert B. Cialdini</li>
-   <li>Digital Minimalism: Choosing a Focused Life in a Noisy World
-      By: Cal Newport</li>
-  <li>Range: Why Generalists Triumph in a Specialized World
-   By: David Epstein</li>
-  <li>Shoe Dog: A Memoir by the Creator of Nike
-   By: Phil Knight</li>
-  <li>The Chris Farley Show: A Biography in Three Acts
-   By: Tom Farley , Tanner Colby</li>
-   <li>Deep Work: Rules for Focused Success in a Distracted World
-    By: Cal Newport</li>
-    <li>Total Recall: My Unbelievably True Life Story
-     By: Arnold Schwarzenegger</li>
-     <li>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones
-      By: James Clear</li>
-      <li>The 1-Page Marketing Plan: Get New Customers, Make More Money, And Stand Out From The Crowd
-       By: Allan Dib</li>
-       <li>The Almanack of Naval Ravikant: A Guide to Wealth and Happiness
-        By: Eric Jorgenson , Tim Ferriss</li>
-        <li>Caffeine: How Caffeine Created the Modern World
-         By: Michael Pollan</li>
-         <li>Atlas: From the Streets to the Ring: A Son's Struggle to Become a Man
-          By: Teddy Atlas , Peter Alson</li>
-          <li>The Scout Mindset: Why Some People See Things Clearly and Others Don't
-           By: Julia Galef</li>
-           <li>When I Stop Talking, You'll Know I'm Dead: Useful Stories from a Persuasive Man
-            By: Jerry Weintraub , Rich Cohen , George Clooney - foreword</li>
-            <li>Six-Figure Musician: How to Sell More Music, Get More People to Your Shows, and Make More Money in the Music Business: Music Marketing [dot] com Presents
-             By: David Hooper</li>
-             <li>The Lessons of History
-              By: Will , Ariel Durant</li>
-              <li>Dangerous Personalities: An FBI Profiler Shows You How to Identify and Protect Yourself from Harmful People
-               By: Joe Navarro , Toni Sciarra Poynter</li>
-               <li>Hustle Harder, Hustle Smarter
-                By: Curtis 50 Cent Jackson</li>
-                <li>Rich Dad Poor Dad: 20th Anniversary Edition: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!
-                 By: Robert T. Kiyosaki</li>
-                 <li>The Compound Effect: Multiply Your Success One Simple Step at a Time
-                  By: Darren Hardy</li>
-                  <li>The Art of Less Doing: One Entrepreneur's Formula for a Beautiful Life
-                   By: Ari Meisel</li>
-                   <li>Never Split the Difference: Negotiating as if Your Life Depended on It
-                    By: Chris Voss</li>
-                     <li>Goodbye, Things: The New Japanese Minimalism
-                      By: Fumio Sasaki , Eriko Sugita - translator</li>
-                      <li>Can't Hurt Me: Master Your Mind and Defy the Odds
-                       By: David Goggins</li>
-                       <li>Dopamine Nation: Finding Balance in the Age of Indulgence
-                        By: Dr. Anna Lembke</li>
-                        <li>The Power of Habit: Why We Do What We Do in Life and Business
-                         By: Charles Duhigg</li>
-                         <li>Essentialism: The Disciplined Pursuit of Less
-                          By: Greg McKeown</li>
-                          <li>Man's Search for Meaning
-                           By: Viktor E. Frankl</li>
-                           <li>The 10X Rule: The Only Difference Between Success and Failure
-                            By: Grant Cardone</li>
-                            <li>Psycho-Cybernetics: Updated and Expanded
-                             By: Maxwell Maltz</li>
-<li>The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph
- By: Ryan Holiday</li>
- <li>Ego Is the Enemy
-  By: Ryan Holiday</li>
-  <li>How to Win Friends & Influence People
-   By: Dale Carnegie</li>
-   <li>Extreme Ownership: How U.S. Navy SEALs Lead and Win
-    By: Jocko Willink , Leif Babin</li>
-    <li>Carl Jung
-     By: Mark Vernon</li>
-     <li>The Rational Optimist: How Prosperity Evolves
-      By: Matt Ridley</li>
-      <li>The Outsiders: Eight Unconventional CEOs and Their Radically Rational Blueprint for Success
-       By: William N. Thorndike</li>
-       <li>The Language of Sales: The Art and Science of Sales Communication
-        By: Tom Hopkins , Andrew Eilers</li>
-        <li>48 Laws of Power
-         By: Robert Greene</li>
-         <li>How to Own Your Own Mind
-          By: Napoleon Hill , Don Green - introduction</li>
-          <li>33 Strategies of War
-           By: Robert Greene</li>
-           <li>Titan: The Life of John D. Rockefeller, Sr.
-            By: Ron Chernow</li>
+        <div class="wrapper">
+            <div class="header-box">
+                <div class="header-btn">
+                    <span></span>
+                </div>
 
+                <div class="header-menu">
+                    <nav class="header-menu-inner">
+                        <ul class="menu"> 
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="index.html">Home</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="about.html">About</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="disfiguringthegoddess.html">Disfiguring The Goddess</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="bigchocolate.html">Big Chocolate</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="books.html">Books</a>
+                            </li>
+                            <li class="menu-elem">
+                                <a class="menu-elem-link" href="links.html">Links</a>
+                            </li>
+                        </ul>
+                   </nav>
+                </div>
 
-            <script>
-               var list = document.getElementById("nonFiction");
-               var items = list.getElementsByTagName("li");
-               var array = [];
-               for (var i = 0; i < items.length; i++) {
-                 array.push(items[i].innerHTML);
-               }
-               array.sort();
-               for (var i = 0; i < items.length; i++) {
-                 items[i].innerHTML = array[i];
-               }
-             </script>
- 
-  </ul>
+                <div class="header-socials">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/disfiguringthegoddess" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/dtgdtgdtg/" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="https://open.spotify.com/artist/4KNivmUcgaar8yZvjYRoqv?si=-iJmFtguQoeHpCc3jJlQDg" class="socials-elem" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#fff"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                        </a>                
+                    </div>
+                </div>
+            </div>
 
-  <h2>Fiction</h2>
-  <ul id="Fiction">
-   <li>1984: New Classic Edition
-    By: George Orwell</li>
-   <li>The Exorcist: A Novel
-    By: William Peter Blatty</li>
-   <li>The Shining
-    By: Stephen King</li>
-    <li>Salem's Lot By: Stephen King</li>
-    <li>The Institute
-     A Novel
-     By: Stephen King</li>
-     <li>What the Night Knows
-      By: Dean Koontz</li>
-      <li>Innocence
-       A Novel
-       By: Dean Koontz</li>
-       <li>Watchers
-        By: Dean Koontz</li>
-   </ul>
+        </div>        
 
-   <script>
-      var list = document.getElementById("Fiction");
-      var items = list.getElementsByTagName("li");
-      var array = [];
-      for (var i = 0; i < items.length; i++) {
-        array.push(items[i].innerHTML);
-      }
-      array.sort();
-      for (var i = 0; i < items.length; i++) {
-        items[i].innerHTML = array[i];
-      }
-    </script>
+    </header>
 
+    <main class="main">
+        <div class="heading heading-books">
+            <div class="wrapper">
+                <h1 class="page-title">Books</h1>
+            </div>
+        </div>
 
+        <section class="section section-books">
+            <div class="wrapper">
+                <div class="books">
+                    <p>Here are some books I would recommend</p>
+                    <h2 class="section-title"><span>Non Fiction</span></h2>
+                    <ul>
+                        <li><span class="books-title">Birth School Metallica Death, Volume 1</span><span class="books-author">By: Paul Brannigan , Ian Winwood</span></li>
+                        <li><span class="books-title">Never Finished: Unshackle Your Mind and Win the War Within</span><span class="books-author"> By: David Goggins</span></li>
+                        <li><span class="books-title">Think and Grow Rich</span><span class="books-author"> By: Napoleon Hill</span></li>
+                        <li><span class="books-title">The Power of One More: The Ultimate Guide to Happiness and Success</span><span class="books-author"> By: Ed Mylett</span></li>
+                        <li><span class="books-title">The Greatest Salesman in the World</span><span class="books-author"> By: Og Mandino</span></li>
+                        <li><span class="books-title">Failing Forward: Turning Mistakes into Stepping Stones for Success</span><span class="books-author"> By: John C. Maxwell</span></li>
+                        <li><span class="books-title">Pick Up the Phone and Sell: How Proactive Calls to Customers and Prospects Can Double Your Sales</span><span class="books-author"> By: Alex Goldfayn</span></li>
+                        <li><span class="books-title">Petty: The Biography</span><span class="books-author"> By: Warren Zanes</span></li>
+                        <li><span class="books-title">Sapiens: A Brief History of Humankind</span><span class="books-author"> By: Yuval Noah Harari</span></li>
+                        <li><span class="books-title">The Hypomanic Edge: The Link Between (A Little) Craziness and (A Lot of) Success in America</span><span class="books-author"> By: John D. Gartner</span></li>
+                        <li><span class="books-title">Pre-Suasion: Channeling Attention for Change</span><span class="books-author"> By: Robert B. Cialdini</span></li>
+                        <li><span class="books-title">Digital Minimalism: Choosing a Focused Life in a Noisy World</span><span class="books-author"> By: Cal Newport</span></li>
+                        <li><span class="books-title">Range: Why Generalists Triumph in a Specialized World</span><span class="books-author"> By: David Epstein</span></li>
+                        <li><span class="books-title">Shoe Dog: A Memoir by the Creator of Nike</span><span class="books-author"> By: Phil Knight</span></li>
+                        <li><span class="books-title">The Chris Farley Show: A Biography in Three Acts</span><span class="books-author"> By: Tom Farley , Tanner Colby</span></li>
+                        <li><span class="books-title">Deep Work: Rules for Focused Success in a Distracted World</span><span class="books-author"> By: Cal Newport</span></li>
+                        <li><span class="books-title">Total Recall: My Unbelievably True Life Story</span><span class="books-author"> By: Arnold Schwarzenegger</span></li>
+                        <li><span class="books-title">Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</span><span class="books-author"> By: James Clear</span></li>
+                        <li><span class="books-title">The 1-Page Marketing Plan: Get New Customers, Make More Money, And Stand Out From The Crowd</span><span class="books-author"> By: Allan Dib</span></li>
+                        <li><span class="books-title">The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</span><span class="books-author"> By: Eric Jorgenson , Tim Ferriss</span></li>
+                        <li><span class="books-title">Caffeine: How Caffeine Created the Modern World</span><span class="books-author"> By: Michael Pollan</span></li>
+                        <li><span class="books-title">Atlas: From the Streets to the Ring: A Son's Struggle to Become a Man</span><span class="books-author"> By: Teddy Atlas , Peter Alson</span></li>
+                        <li><span class="books-title">The Scout Mindset: Why Some People See Things Clearly and Others Don't</span><span class="books-author"> By: Julia Galef</span></li>
+                        <li><span class="books-title">When I Stop Talking, You'll Know I'm Dead: Useful Stories from a Persuasive Man</span><span class="books-author"> By: Jerry Weintraub , Rich Cohen , George Clooney - foreword</span></li>
+                        <li><span class="books-title">Six-Figure Musician: How to Sell More Music, Get More People to Your Shows, and Make More Money in the Music Business: Music Marketing [dot] com Presents</span><span class="books-author"> By: David Hooper</span></li>
+                        <li><span class="books-title">The Lessons of History</span><span class="books-author"> By: Will , Ariel Durant</span></li>
+                        <li><span class="books-title">Dangerous Personalities: An FBI Profiler Shows You How to Identify and Protect Yourself from Harmful People</span><span class="books-author"> By: Joe Navarro , Toni Sciarra Poynter</span></li>
+                        <li><span class="books-title">Hustle Harder, Hustle Smarter</span><span class="books-author"> By: Curtis 50 Cent Jackson</span></li>
+                        <li><span class="books-title">Rich Dad Poor Dad: 20th Anniversary Edition: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!</span><span class="books-author"> By: Robert T. Kiyosaki</span></li>
+                        <li><span class="books-title">The Compound Effect: Multiply Your Success One Simple Step at a Time</span><span class="books-author"> By: Darren Hardy</span></li>
+                        <li><span class="books-title">The Art of Less Doing: One Entrepreneur's Formula for a Beautiful Life</span><span class="books-author"> By: Ari Meisel</span></li>
+                        <li><span class="books-title">Never Split the Difference: Negotiating as if Your Life Depended on It</span><span class="books-author"> By: Chris Voss</span></li>
+                        <li><span class="books-title">Goodbye, Things: The New Japanese Minimalism</span><span class="books-author"> By: Fumio Sasaki , Eriko Sugita - translator</span></li>
+                        <li><span class="books-title">Can't Hurt Me: Master Your Mind and Defy the Odds</span><span class="books-author"> By: David Goggins</span></li>
+                        <li><span class="books-title">Dopamine Nation: Finding Balance in the Age of Indulgence</span><span class="books-author"> By: Dr. Anna Lembke</span></li>
+                        <li><span class="books-title">The Power of Habit: Why We Do What We Do in Life and Business</span><span class="books-author"> By: Charles Duhigg</span></li>
+                        <li><span class="books-title">Essentialism: The Disciplined Pursuit of Less</span><span class="books-author"> By: Greg McKeown</span></li>
+                        <li><span class="books-title">Man's Search for Meaning</span><span class="books-author"> By: Viktor E. Frankl</span></li>
+                        <li><span class="books-title">The 10X Rule: The Only Difference Between Success and Failure</span><span class="books-author"> By: Grant Cardone</span></li>
+                        <li><span class="books-title">Psycho-Cybernetics: Updated and Expanded</span><span class="books-author"> By: Maxwell Maltz</span></li>
+                        <li><span class="books-title">The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph</span><span class="books-author"> By: Ryan Holiday</span></li>
+                        <li><span class="books-title">Ego Is the Enemy</span><span class="books-author"> By: Ryan Holiday</span></li>
+                        <li><span class="books-title">How to Win Friends & Influence People</span><span class="books-author"> By: Dale Carnegie</span></li>
+                        <li><span class="books-title">Extreme Ownership: How U.S. Navy SEALs Lead and Win</span><span class="books-author"> By: Jocko Willink , Leif Babin</span></li>
+                        <li><span class="books-title">Carl Jung</span><span class="books-author"> By: Mark Vernon</span></li>
+                        <li><span class="books-title">The Rational Optimist: How Prosperity Evolves</span><span class="books-author"> By: Matt Ridley</span></li>
+                        <li><span class="books-title">The Outsiders: Eight Unconventional CEOs and Their Radically Rational Blueprint for Success</span><span class="books-author"> By: William N. Thorndike</span></li>
+                        <li><span class="books-title">The Language of Sales: The Art and Science of Sales Communication</span><span class="books-author"> By: Tom Hopkins , Andrew Eilers</span></li>
+                        <li><span class="books-title">48 Laws of Power</span><span class="books-author"> By: Robert Greene</span></li>
+                        <li><span class="books-title">How to Own Your Own Mind</span><span class="books-author"> By: Napoleon Hill , Don Green - introduction</span></li>
+                        <li><span class="books-title">33 Strategies of War</span><span class="books-author"> By: Robert Greene</span></li>
+                        <li><span class="books-title">Titan: The Life of John D. Rockefeller, Sr.</span><span class="books-author"> By: Ron Chernow</span></li>
+                    </ul>
+
+                    <h2 class="section-title"><span>Fiction</span></h2>
+                    <ul>
+                        <li><span class="books-title">1984: New Classic Edition</span><span class="books-author"> By: George Orwell</span></li>
+                        <li><span class="books-title">The Exorcist</span><span class="books-author">A Novel By: William Peter Blatty</span></li>
+                        <li><span class="books-title">The Shining</span><span class="books-author"> By: Stephen King</span></li>
+                        <li><span class="books-title">Salem's Lot</span><span class="books-author"> By: Stephen King</span></li>
+                        <li><span class="books-title">The Institute</span><span class="books-author"> A Novel By: Stephen King</span></li>
+                        <li><span class="books-title">What the Night Knows</span><span class="books-author"> By: Dean Koontz</span></li>
+                        <li><span class="books-title">Innocence </span><span class="books-author"> A Novel By: Dean Koontz</span></li>
+                        <li><span class="books-title">Watchers</span><span class="books-author"> By: Dean Koontz</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>        
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="socials">
+                <a href="https://www.facebook.com/disfiguringthegoddess" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/dtgdtgdtg/" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a href="https://open.spotify.com/artist/4KNivmUcgaar8yZvjYRoqv?si=-iJmFtguQoeHpCc3jJlQDg" class="socials-elem" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#fff"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                </a>                
+            </div>
+            <div class="copyright">© 2023</div>
+        </div>
+    </footer>
+
+    <a class="go-top"></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
