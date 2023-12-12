@@ -1,0 +1,645 @@
+@media only screen and (max-width: 1280px) {
+    .menu-elem {
+        padding: 0 15px;
+    }
+
+    .menu-elem-link {
+        font-size: 16px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-pic {
+        flex: 0 0 100%;
+    }
+
+    .about-pic-img {
+        max-width: 600px;
+    }
+
+    .about-text {
+        flex: 0 0 100%;
+        padding: 40px 15px;
+    }
+
+} 
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    body.home {
+        top: -66px;
+        margin-bottom: -66px;
+    }
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .menu-elem {
+        padding: 0 10px;
+    }
+
+    .heading {
+        padding: 75px 0;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .content-logo-img {
+        max-width: 400px;
+    }
+
+    .albums {
+        gap: 10px;
+    }
+
+    .albums-elem-title {
+        font-size: 16px;
+    }
+
+    .albums-elem-year {
+        font-size: 13px;
+    }
+
+    .btn-section {
+        letter-spacing: 3px;
+        padding: 15px 50px;
+    }
+
+    .section-footer-main .btn {
+        width: 260px;;
+    }
+
+    .performances-elem-date {
+        font-size: 30px;
+        flex: 0 0 25%;
+    }
+
+    .performances-elem-name {
+        font-size: 26px;
+        flex: 0 0 50%;
+    }
+
+    .performances-elem-location {
+        flex: 0 0 25%;
+    }
+
+    .placements .performances-elem-date {
+        flex: 0 0 20%;
+    }
+
+    .placements .performances-elem-name {
+        flex: 0 0 30%;
+    }
+
+    .placements .performances-elem-location {
+        flex: 0 0 50%;
+    }
+
+    .about-text {
+        padding: 20px 15px;
+    }
+
+    .books li {
+        padding: 15px 15px 15px 50px;
+    }
+
+    .books li::before {
+        width: 26px;
+        height: 23px;
+        left: 15px;
+    }
+
+    .books-title {
+        font-size: 16px;
+    }
+
+    .books-author {
+        font-size: 14px;
+    }
+
+    .blog-elem-link {
+        font-size: 22px;
+    }
+
+    .content li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 950px) { 
+    .menu-elem {
+        padding: 0 5px;
+    }
+
+    .menu-elem-link {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 900px) { 
+    .albums {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .videos-elem {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .photos {
+        gap: 10px;
+    }
+
+    .links-elem {
+        flex: 0 0 33%;
+    }
+
+    .links-elem svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .links-elem-title {
+        font-size: 16px;
+    }
+
+    .blog-elem-info {
+        padding-left: 15px;
+    }
+} 
+
+@media only screen and (max-width: 768px) { 
+    body.home {
+        top: -58px;
+        margin-bottom: -58px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    } 
+    
+    h3 {
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 14px 0;
+    }
+
+    body.menu-opened .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0F0F0F;
+    }
+
+    .header-box {
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-elem {
+        padding: 14px 10px;
+    }
+
+    .menu-elem-link {
+        font-size: 16px;
+    }
+
+    .header-btn {
+        display: block;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow-y: auto;
+        background: #0F0F0F;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 3;
+        transition: .4s all;
+    }
+
+    .header-menu.active {
+        top: calc(100% + 14px);
+        height: calc(100vh - 52px);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-menu-inner {
+        margin: auto;
+    }
+
+    .heading {
+        padding: 55px 0;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+
+    .content-logo-img {
+        max-width: 300px;
+    }
+    
+    .videos-elem:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .performances-elem {
+        padding: 15px 0;
+        flex-wrap: wrap;
+    }
+
+    .performances-elem:not(:last-child) {
+        border-bottom: 3px dotted #8d8d8d;
+    }
+
+    .performances-elem-date {
+        flex: 0 0 30%;
+    }
+
+    .performances-elem-name {
+        flex: 0 0 70%;
+        text-align: right;
+        padding-left: 0;
+        border: none;
+    }
+
+    .performances-elem-location {
+        flex: 0 0 100%;
+        text-align: left;
+    }
+
+    .placements .performances-elem-name {
+        flex: 0 0 80%;
+    }
+
+    .placements .performances-elem-location {
+        flex: 0 0 100%;
+    }
+
+    .photos {
+        grid-template-areas: 
+        "A A A A   B B B B   B B B B"
+        "A A A A   F F F F   H H H H"
+        "D D D D   C C C C   G G G G"
+        "I I I I   I I E E   E E E E";
+    }
+
+    .blog-elem-pic {
+        flex: 0 0 250px;
+    }
+
+    .blog-elem-info {
+        flex: 0 0 calc(100% - 250px);
+    }
+
+    .blog-elem-link {
+        font-size: 20px;
+    }
+
+    .blog-elem:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .books-title {
+        flex: 0 0 100%;
+    }
+
+    .books-author {
+        text-align: left;
+        flex: 0 0 100%;
+    }
+} 
+
+@media only screen and (max-width: 600px) { 
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }  
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    .section-title::before {
+        width: 200px;
+    }
+
+    .section-title::after {
+        width: 100px;
+    }
+
+    .section-welcome {
+        min-height: auto;
+    }
+
+    .albums {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .videos {
+        margin: 0 -15px;
+    }
+
+    .reviews-elem {
+        padding: 40px 20px 20px;
+    }
+
+    .reviews-elem-body::before {
+        left: 0;
+    }
+
+    .reviews-elem-body::after {
+        right: 0;
+    }
+
+    .performances-elem {
+        padding: 10px 0;
+    }
+
+    .performances-elem-date {
+        font-size: 24px;
+    }
+
+    .performances-elem-location {
+        font-size: 18px;
+    }
+
+    .performances-elem-name {
+        font-size: 20px;
+    }
+
+    .links-elem {
+        flex: 0 0 50%;
+    }
+
+    .blog-elem {
+        flex-direction: column;
+    }
+
+    .blog-elem-pic {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .blog-elem-img {
+        max-height: 250px;
+    }
+
+    .blog-elem-info {
+        flex: 0 0 100%;
+        padding-left: 0;
+    }
+
+    .blog-elem-btn {
+        text-align: center;
+    }
+
+    .section-footer-main {
+        flex-direction: column;
+    }
+
+    .section-footer-main .btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .books li::before {
+        top: 13px;
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    p {
+        font-size: 14px;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 14px;
+    }   
+
+    .reviews-elem-body::before,
+    .reviews-elem-body::after {
+        width: 20px;
+        height: 20px;
+    }
+   
+    .reviews-elem-rating {
+        font-size: 22px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .content iframe {
+        width: 100%!important;
+    }
+
+    .content ul {
+        padding-left: 20px;
+        margin-bottom: 14px;
+    }
+
+    .content li {
+        font-size: 14px;
+    }
+
+    .about-text {
+        padding: 10px 15px;
+    }
+
+    .photos {
+        grid-template-areas: 
+        "A A A A   B B B B"
+        "F F F F   H H H H"
+        "G G G G   G G G G"
+        "D D D D   C C C C"
+        "I I I I   E E E E";
+    }
+
+    .blog-elem-link {
+        font-size: 18px;
+    }
+
+    .blog-elem-preview {
+        font-size: 14px;
+    }
+
+    .btn-readmore {
+        width: 100%;
+    }
+
+    .article-date {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) { 
+    h1 {
+        font-size: 18px;
+    }
+
+    .albums {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }   
+
+    .btn-section,
+    .section-footer-main .btn {
+        width: 100%;
+    }
+
+    .performances-elem-date,
+    .performances-elem-name,
+    .performances-elem-location,
+    .placements .performances-elem-date,
+    .placements .performances-elem-name {
+        flex: 0 0 100%;
+    }
+
+    .performances-elem-date {
+        font-size: 18px;
+    }
+
+    .performances-elem-name {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .performances-elem-location {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px) { 
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .heading {
+        padding: 35px 0;
+    }
+
+    .page-title {
+        letter-spacing: 0px;
+    }
+
+    .section-title::before {
+        width: 180px;
+    }
+
+    .section-title::after {
+        width: 90px;
+    }
+
+    .content-logo-img {
+        max-width: 200px;
+    }
+
+    .videos {
+        margin: 0 -10px;
+    }
+
+    .btn-section {
+        font-size: 14px;
+    }
+
+    .photos {
+        grid-template-areas: 
+        "A A A A"
+        "B B B B"
+        "F F F F"
+        "H H H H"
+        "G G G G"
+        "D D D D"
+        "C C C C"
+        "I I I I"
+        "E E E E";
+    }
+
+    .links-elem svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .links-elem-title {
+        font-size: 15px;
+    }
+
+    .books li {
+        padding: 10px 10px 10px 45px;
+    }
+
+    .books li::before {
+        left: 10px;
+        top: 10px;
+    }
+   
+    .books-title {
+        font-size: 14px;
+    }
+
+    .books-author {
+        font-size: 13px;
+    }
+
+    .blog-elem-link {
+        font-size: 16px;
+    }
+}
